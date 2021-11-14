@@ -26,3 +26,6 @@ set_target_properties(${MAIN_TARGET_NAME}_lib PROPERTIES ARCHIVE_OUTPUT_DIRECTOR
 
 # Link the firmware target to library
 target_link_libraries(${MAIN_TARGET_NAME}_executable ${MAIN_TARGET_NAME}_lib)
+
+# Add doxygen
+add_subdirectory ("doc")
