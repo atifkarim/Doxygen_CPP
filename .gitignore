@@ -19,3 +19,7 @@ build
 
 # Ignore lib files
 lib
+
+# Ignore doxygen files
+doc/*
+!doc/Doxyfile
