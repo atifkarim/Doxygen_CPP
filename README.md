@@ -5,21 +5,21 @@ Trying to learn the process of making documentation of CPP project using Doxygen
 
 - Create Doxygen file
 
-```sh
-cd project_directory
-mkdir doc && cd doc
-doxygen -g
-doxygen Doxyfile
-```
-Right now in `doc` directory a file `Doxygen` will be appeared. It has no extension. In this file required modification could be done. For example, I have enabled [Generation of XML](https://github.com/atifkarim/Doxygen_CPP/commit/018cb2d741f608cb214892d4f9f9011033116e50).
+    ```sh
+    cd project_directory
+    mkdir doc && cd doc
+    doxygen -g
+    doxygen Doxyfile
+    ```
+    Right now in `doc` directory a file `Doxygen` will be appeared. It has no extension. In this file required modification could be done. For example, I have enabled [Generation of XML](https://github.com/atifkarim/Doxygen_CPP/commit/018cb2d741f608cb214892d4f9f9011033116e50).
 
 - Build the project and access generated doc file
 
-```sh
-mkdir build && cd build
-cmake .. && make
-```
-Now navigate to `build/doc/doxygen/html` and find `index.html`. This is the generated doc file. I have plan to move this in another directory rather than `build` directory.
+    ```sh
+    mkdir build && cd build
+    cmake .. && make
+    ```
+    Now navigate to `build/doc/doxygen/html` and find `index.html`. This is the generated doc file. I have plan to move this in another directory rather than `build` directory.
 
 
 ### Resources
